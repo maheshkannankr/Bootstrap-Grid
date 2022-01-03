@@ -1,0 +1,11 @@
+img {
+  height: 50px;
+  width: auto;
+}
+
+.bg {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: cadetblue;
+  color: darkblue;
+}
