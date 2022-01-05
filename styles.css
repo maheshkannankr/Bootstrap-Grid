@@ -1,11 +1,15 @@
+body {
+  background-color: black;
+}
+.bg {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: cadetblue;
+  color: darkblue;
+}
+
 img {
   height: 50px;
   width: auto;
-}
-
-.bg {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: cadetblue;
-  color: darkblue;
 }
