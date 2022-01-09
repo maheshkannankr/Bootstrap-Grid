@@ -1,15 +1,51 @@
 body {
-  background-color: black;
+  background: rgb(4, 253, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 253, 246, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
-.bg {
-  padding: 15px;
-  display: flex;
-  justify-content: space-around;
-  background-color: cadetblue;
-  color: darkblue;
-}
-
 img {
   height: 50px;
   width: auto;
+}
+.contactfont {
+  font-family: "Titillium Web", sans-serif;
+  font-style: bold;
+}
+.m-top {
+  margin-top: 150px;
+}
+.b-left {
+  border-left: 2px solid black;
+}
+.border-bottom {
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+.margin-left {
+  margin-left: 80px;
+}
+.contactbg {
+  padding: 50px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+}
+.contactbg::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+  }
 }
